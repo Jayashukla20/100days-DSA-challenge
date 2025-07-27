@@ -1,4 +1,23 @@
+let inventory = [
+    { id: 101, name: 'Laptop' },
+    { id: 102, name: 'Mobile' },
+    { id: 103, name: 'laptop' },
+    { id: 104, name: 'Tablet' },
+    { id: 105, name: 'MOBILE' },
+    { id: 106, name: 'Camera' }
+];
+let seen = [];
+let filtered = inventory.filter(item => {
+    let lowerName = item.name.toLowerCase();
+    // console.log('Checking:', lowerName, '| Seen:', seen);
+    if (!seen.includes(lowerName)) {
+        seen.push(lowerName);
+        return true;
+    }
 
+    return false;
+});
+console.log(filtered)
 // Expected Output:
 // [
 //   { id: 101, name: 'Laptop' },
