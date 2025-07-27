@@ -1,19 +1,19 @@
-// const phoneNumbers = [
-//     "+919876543210",
-//     "+14085551234",
-//     "+918888777666",
-//     "+12345678901",
-//     "+917654321098"
-// ];
-// function separateContact(phoneNumbers) {
-//     let ind = phoneNumbers.filter(x => x.startsWith("+91"))
-//     let us = phoneNumbers.filter(y => y.startsWith("+1"))
-//     return {
-//         indianNumbers: ind,
-//         usNumbers: us
-//     }
-// }
-// console.log(separateContact(phoneNumbers))
+const phoneNumbers = [
+    "+919876543210",
+    "+14085551234",
+    "+918888777666",
+    "+12345678901",
+    "+917654321098"
+];
+function separateContact(phoneNumbers) {
+    let ind = phoneNumbers.filter(x => x.startsWith("+91"))
+    let us = phoneNumbers.filter(y => y.startsWith("+1"))
+    return {
+        indianNumbers: ind,
+        usNumbers: us
+    }
+ }
+ console.log(separateContact(phoneNumbers))
 
 // ✅ Output:
 // {
