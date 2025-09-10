@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let items = [
   { name: "Pen", qty: 3, price: 10 },
   { name: "Notebook", qty: 2, price: 50 },
@@ -63,7 +63,7 @@ for (let [product, qty] of Object.entries(totals)) {
 console.log(maxProduct)
 
 // ✅ Expected Output:
-=======
+
 let items = [
   { name: "Pen", qty: 3, price: 10 },
   { name: "Notebook", qty: 2, price: 50 },
@@ -128,5 +128,5 @@ for (let [product, qty] of Object.entries(totals)) {
 console.log(maxProduct)
 
 // ✅ Expected Output:
->>>>>>> 8f41fdd (adding file)
+
 // 'Pen'
